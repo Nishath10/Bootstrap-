@@ -1,483 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootstrap website</title>
-    <!-- <link rel="stylesheet" href="style.css"> -->
-    <!-- Font Awesome -->
-<link
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-rel="stylesheet"
-/>
-<!-- Google Fonts -->
-<link
-href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
-rel="stylesheet"
-/>
-<!-- MDB -->
-<link
-href="https://cdn.jsdelivr.net/npm/mdb-ui-kit@9.0.0/css/mdb.min.css"
-rel="stylesheet"
-/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Incredible India - Hyderabad</title>
 
-    
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet"/>
+
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
+
+  <!-- MDB UI Kit -->
+  <link href="https://cdn.jsdelivr.net/npm/mdb-ui-kit@9.0.0/css/mdb.min.css" rel="stylesheet"/>
 </head>
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <!-- Container wrapper -->
-        <div class="container-fluid">
-        <!-- Toggle button -->
-    
-        <!-- Collapsible wrapper -->
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <!-- Navbar brand -->
-            <a class="navbar-brand mt-2 mt-lg-0" href="#" style="background-color: black;">
-            <img
-                src="incredible-india-logo.svg"
-                height="30" 
-                alt=""/>
-            </a>
 
-        
-            <!-- Left links -->
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand mt-2 mt-lg-0" href="#">
+      <img src="incredible-india-logo.svg" height="30" alt="Logo" style="background-color: black;" />
+    </a>
 
-            <nav class="navbar navbar-expand-lg bg-body-tertiary">
-                <div class="container-fluid">
-                <ul class="navbar-nav">
-                    <!-- Dropdown -->
-                    <li class="nav-item dropdown">
-                    <a
-                        data-mdb-dropdown-init
-                        class="nav-link dropdown-toggle"
-                        href="#"
-                        id="navbarDropdownMenuLink"
-                        role="button"
-                        aria-expanded="false"
-                    >
-                        Destinations
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <li>
-                        <a class="dropdown-item" href="#">Action</a>
-                        </li>
-                        <li>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        </li>
-                        <li>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                        </li>
-                    </ul>
-                    </li>
-                </ul>
-                </div>
-            </nav>
+    <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarNavDropdown">
+      <i class="fas fa-bars"></i>
+    </button>
 
-            <nav class="navbar navbar-expand-lg bg-body-tertiary">
-                <div class="container-fluid">
-                <ul class="navbar-nav">
-                    <!-- Dropdown -->
-                    <li class="nav-item dropdown">
-                    <a
-                        data-mdb-dropdown-init
-                        class="nav-link dropdown-toggle"
-                        href="#"
-                        id="navbarDropdownMenuLink"
-                        role="button"
-                        aria-expanded="false"
-                    >
-                        Experiences
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <li>
-                        <a class="dropdown-item" href="#">Action</a>
-                        </li>
-                        <li>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        </li>
-                        <li>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                        </li>
-                    </ul>
-                    </li>
-                </ul>
-                </div>
-            </nav>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <!-- Destinations -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-mdb-toggle="dropdown">Destinations</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+          </ul>
+        </li>
+        <!-- Experiences -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-mdb-toggle="dropdown">Experiences</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+          </ul>
+        </li>
+        <!-- Plan Trip -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-mdb-toggle="dropdown">Plan Your Trip</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+          </ul>
+        </li>
+      </ul>
 
-
-            <nav class="navbar navbar-expand-lg bg-body-tertiary">
-                <div class="container-fluid">
-                <ul class="navbar-nav">
-                    <!-- Dropdown -->
-                    <li class="nav-item dropdown">
-                    <a
-                        data-mdb-dropdown-init
-                        class="nav-link dropdown-toggle"
-                        href="#"
-                        id="navbarDropdownMenuLink"
-                        role="button"
-                        aria-expanded="false"
-                    >
-                        Plan your trip
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <li>
-                        <a class="dropdown-item" href="#">Action</a>
-                        </li>
-                        <li>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        </li>
-                        <li>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                        </li>
-                    </ul>
-                    </li>
-                </ul>
-                </div>
-            </nav>
-
-            <!-- Left links -->
-        </div>
-        <!-- Collapsible wrapper -->
-    
-        <!-- Right elements -->
-            <!-- Icon -->
-            <a class="text-reset me-3" href="#">
-            <i class="fas fa-search"></i>
-            <i class="fa-regular fa-user"></i>
-            <i class="fa-regular fa-heart"></i>
-            <i class="fa-solid fa-bars"></i>
-            </a>
-    
-            <!-- Notifications -->
-            <div class="dropdown">
-            <a
-                data-mdb-dropdown-init
-                class="text-reset me-3 dropdown-toggle hidden-arrow"
-                href="#"
-                id="navbarDropdownMenuLink"
-                role="button"
-                aria-expanded="false">
-            </a>
-            <ul
-                class="dropdown-menu dropdown-menu-end"
-                aria-labelledby="navbarDropdownMenuLink"
-            >
-                <li>
-                <a class="dropdown-item" href="#">Some news</a>
-                </li>
-                <li>
-                <a class="dropdown-item" href="#">Another news</a>
-                </li>
-                <li>
-                <a class="dropdown-item" href="#">Something else here</a>
-                </li>
-            </ul>
-            </div>
-    </nav>
-    
-    <!-- Background image -->
-    <div
-    class="bg-image"
-    style="
-    background-image: url('https://mdbcdn.b-cdn.net/img/new/fluid/nature/012.we');">
-    
-    <!-- Background image -->
-    <!-- Jumbotron -->
-    <div
-    class="bg-image p-5 text-center shadow-1-strong rounded mb-5 text-white h-50"
-    style="background-image: url('https://mdbcdn.b-cdn.net/img/new/slides/003.webp');">
-    <h3 class="mb-3 h2">Telangana</h3>
-
-    <h1 style="font-weight: bold;">
-        The best places to shop in Hyderabad for every budget
-    </h1>
-    </div>
-<!-- Jumbotron -->
-
- <!-- MDB -->
-
-
-        <div class="Container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <h1 style="font-weight: bold; color: black;">
-                        Explore the enchanting shopper's paradise
-                    </h1>
-
-                    <p>
-                        Hyderabad, known for its rich heritage and delectable cuisine, is also an effervescent marketplace full of lively markets that draw shoppers from around the globe. Attracted by their vibrant markets centred around <a href="" style="color: red;">Charminar's</a> signature shopping experience, tourists from every continent flock to Hyderabad's charming markets to find treasure troves of exquisite jewellery, traditional fabrics, and more! Join us on this poetic voyage through these charming markets of Hyderabad!
-                    </p>
-                    <button type="button" class="btn btn-primary" data-mdb-ripple-init style="background-color: red; color: white; border-radius: 45%; ">Read more</button>
-                </div>
-
-                    <div class="col-lg-6">
-                        <div class="container">
-                            <section class="mx-auto my-5" style="max-width: 23rem;">
-                        
-                            <div class="card map-card">
-                                <div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 200px">
-                                <iframe src="https://maps.google.com/maps?q=manhatan&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                                frameborder="0" style="border:0" allowfullscreen></iframe>
-                                </div>
-                                <div class="card-body closed px-0">
-                                    <div class="bg-white px-4 pb-4 pt-3-5">
-                                    <div
-                                    class="d-flex justify-content-between pt-2 mt-1 text-center text-uppercase living-coral-text">
-                                    <a href="" style="background-color: red;color: white;">View all states</a>
-                                    </div> 
-                                    </div>
-                                    
-                                    
-                                    <a class="text-reset me-3" href="#" >
-                                        <i class="fa-regular fa-heart" style="background-color: red; color: white" ></i>
-                                        <i class="fa-solid fa-share-nodes" style="background-color: red; color: white;"></i>
-                                        </a>
-                    
-                                </div>
-                                </div>
-                            </div>
-                        
-                            </section>
-                    </div>
-                </div>
-        </div>
-    
-        <div class="" style="background-color: rgb(252, 203, 112); text-align: center;">
-            <h4>____More____</h4>
-            <h1 style="font-weight: bold;"> Experiences</h1>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="card" style="width: 18rem;">
-                            <img src="image3.jfif" class="card-img-top" alt="...">
-                            <div class="card-body">
-                              <h3 class="card-title">Hills Weekend Getaways from Hyderabad You Must Explore</h3>
-                              <hr style="border-top-style: groove;">
-                            </div>
-                          </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="card" style="width: 18rem;">
-                            <img src="image4.jfif" class="card-img-top" alt="...">
-                            <div class="card-body">
-                              <h3 class="card-title">Embark on an extravagant culinary journey in Hyderabad</h3>
-                              <hr style="border-top-style: groove;">
-                            </div>
-                          </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="card" style="width: 18rem;">
-                            <img src="image5.jfif" class="card-img-top" alt="...">
-                            <div class="card-body">
-                              <h3 class="card-title">The best local foods in Hyderabad and where to find them</h3>
-                              <hr style="border-top-style: groove;">
-                            </div>
-                          </div>
-                    </div>
-
-                    <a class="text-reset me-3" href="#" >
-                        <i class="fa-solid fa-arrow-left"></i>
-                        <i class="fa-solid fa-arrow-right"></i>
-                    </a>
-                </div>
-                <button type="button" class="btn btn-primary" data-mdb-ripple-init style="background-color: red; color: white;">View all</button>
-
-            </div>
-        </div>
-
-
-        <div class="" style="text-align: center;">
-            <h4>____Explore____</h4>
-            <h1 style="font-weight: bold; "> Attractions</h1>
-        </div>
-
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="card-group">
-                        <div class="card">
-                          <img src="images6.jfif" class="card-img-top" alt="Hollywood Sign on The Hill"/>
-                          <div class="card-body">
-                            <h5 class="card-title">Paigah Tombs </h5>
-                          </div>
-                        </div>
-
-                        <div class="card">
-                          <img src="image7.jpg" class="card-img-top" alt="Palm Springs Road"/>
-                          <div class="card-body">
-                            <h5 class="card-title">Nehru Zoological Park</h5>
-                          </div>
-                        </div>
-
-                        <div class="card">
-                          <img src="image8.jpg" class="card-img-top" alt="Los Angeles Skyscrapers"/>
-                          <div class="card-body">
-                            <h5 class="card-title">Falaknuma Palace</h5>
-                          </div>
-                        </div>
-
-                        <div class="card">
-                            <img src="image9.jfif" class="card-img-top" alt="Los Angeles Skyscrapers"/>
-                            <div class="card-body">
-                              <h5 class="card-title">St. Mary's Church</h5>
-                            </div>
-                          </div>
-
-                          <div class="card">
-                            <img src="image10.jpg" class="card-img-top" alt="Los Angeles Skyscrapers"/>
-                            <div class="card-body">
-                              <h5 class="card-title">Salar Jung Museum</h5>
-                            </div>
-                          </div>
-
-                          <div class="card">
-                            <img src="image11.jpg" class="card-img-top" alt="Los Angeles Skyscrapers"/>
-                            <div class="card-body">
-                              <h5 class="card-title">Nagarjuna Sagar Dam</h5>
-                            </div>
-                          </div>
-
-                          <div class="card">
-                            <img src="image12.jpg" class="card-img-top" alt="Los Angeles Skyscrapers"/>
-                            <div class="card-body">
-                              <h5 class="card-title">Charminar</h5>
-                            </div>
-                          </div>
-                      </div>
-                </div>
-
-                
-                <a class="text-reset me-3" href="#" style="text-align: center;" >
-                        <i class="fa-solid fa-arrow-left"></i>
-                        <i class="fa-solid fa-arrow-right"></i>
-                    </a>
-                <div class="" style="text-align: center; ">
-                    <button type="button" class="btn btn-primary" data-mdb-ripple-init style="background-color: red; color: white; border-radius: 20%; ">Discover more</button>
-                </div>
-            </div>
-        </div>
-
-
-    <!-- Footer -->
-<footer class="text-center text-lg-start bg-body-tertiary text-muted">
-    <!-- Section: Social media -->
-    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-  
-    </section>
-    <!-- Section: Social media -->
-  
-    <!-- Section: Links  -->
-    <section class="">
-      <div class="container text-center text-md-start mt-5">
-        <!-- Grid row -->
-        <div class="row mt-3">
-          <!-- Grid column -->
-          <div class="col-md-3 col-lg-4 col-xxl-3 mx-auto mb-4">
-            <!-- Content -->
-            <h6 class="text-uppercase fw-bold mb-4">
-                <img src="incredible-india-logo.svg " style="background-color: black;" alt="">
-            </h6>
-            <div>
-                <h2>Follow Us</h2>
-                <a href="" class="me-4 text-reset">
-                  <i class="fab fa-facebook-f"></i>
-                </a>
-                <a href="" class="me-4 text-reset">
-                    <i class="fa-brands fa-twitter"></i>
-                  </a>
-                <a href="" class="me-4 text-reset">
-                  <i class="fab fa-instagram"></i>
-                </a>
-                <a href="" class="me-4 text-reset">
-                    <i class="fa-brands fa-youtube"></i>
-                  </a>
-                <a href="" class="me-4 text-reset">
-                  <i class="fab fa-linkedin"></i>
-                </a>
-               
-              </div>
-          </div>
-          <!-- Grid column -->
-  
-          <!-- Grid column -->
-          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-            <!-- Links -->
-            <h6 class="text-uppercase fw-bold mb-4">
-                Quick links
-            </h6>
-            <p>
-              <a href="#!" class="text-reset">Attractions</a>
-            </p>
-            <p>
-              <a href="#!" class="text-reset">Experiences</a>
-            </p>
-            <p>
-              <a href="#!" class="text-reset">Festivals and Events</a>
-            </p>
-            <p>
-              <a href="#!" class="text-reset">FAQs</a>
-            </p>
-            <p>
-              <a href="#!" class="text-reset">Incredible India Content</a>
-             </p>
-             <p>
-               <a href="#!" class="text-reset">Hub</a>
-            </p>
-          </div>
-          <!-- Grid column -->
-  
-          <!-- Grid column -->
-          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-            <!-- Links -->
-            <h6 class="text-uppercase fw-bold mb-4">
-                Newsletter
-            </h6>
-            <p>
-              <a href="#!" class="text-reset">Sign up for exciting news, learn more about our events and get great travel ideas.</a>
-            </p>
-            <button type="button" class="btn btn-primary" data-mdb-ripple-init style="background-color: red; color: white; border-radius: 20%; ">Subscribe now</button>
-          </div>
-          <!-- Grid column -->
-  
-          <!-- Grid column -->
-          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-            <!-- Links -->
-            <h6 class="text-uppercase fw-bold mb-4">Scan to chat</h6>
-           
-            <a href="" class="me-4 text-reset" >
-                <i class="fa-solid fa-qrcode"></i>
-              </a>
-         
-          </div>
-          <!-- Grid column -->
-        </div>
-        <!-- Grid row -->
+      <!-- Right icons -->
+      <div class="d-flex align-items-center">
+        <a href="#" class="me-3 text-reset"><i class="fas fa-search"></i></a>
+        <a href="#" class="me-3 text-reset"><i class="fa-regular fa-user"></i></a>
+        <a href="#" class="me-3 text-reset"><i class="fa-regular fa-heart"></i></a>
+        <a href="#" class="me-3 text-reset"><i class="fa-solid fa-bars"></i></a>
       </div>
-    </section>
-    <!-- Section: Links  -->
-  
-    <!-- Copyright -->
-     <!-- <div>
-        <a href="">Terms of Use</a>
-     </div> -->
-    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-        <div class="">
-            <a href="">Terms of Use  </a>
-            <a href="">Privacy Policy </a>
-            <a href="">Contact Us</a>
-         </div>
-      <a class="text-reset fw-bold" href="https://mdbootstrap.com/">© Ministry of Tourism, Government of India.</a>
     </div>
-    <!-- Copyright -->
-  </footer>
-  <!-- Footer -->
-<script
-type="text/javascript"
-src="https://cdn.jsdelivr.net/npm/mdb-ui-kit@9.0.0/js/mdb.umd.min.js"
-></script>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div class="bg-image text-white p-5 text-center" style="background-image: url('https://mdbcdn.b-cdn.net/img/new/slides/003.webp'); background-size: cover;">
+  <h3 class="mb-3 h2">Telangana</h3>
+  <h1 class="fw-bold">The best places to shop in Hyderabad for every budget</h1>
+</div>
+
+<!-- DESCRIPTION + MAP -->
+<div class="container py-5">
+  <div class="row align-items-center">
+    <div class="col-lg-6">
+      <h2 class="fw-bold">Explore the enchanting shopper's paradise</h2>
+      <p>
+        Hyderabad, known for its rich heritage and delectable cuisine, is also an effervescent marketplace full of lively markets. Tourists flock to <a href="#" style="color: red;">Charminar</a> for exquisite jewellery, traditional fabrics, and more!
+      </p>
+      <button class="btn btn-danger rounded-pill">Read more</button>
+    </div>
+    <div class="col-lg-6">
+      <div class="card">
+        <div style="height: 200px">
+          <iframe src="https://maps.google.com/maps?q=manhattan&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen></iframe>
+        </div>
+        <div class="card-body text-center">
+          <a href="#" class="btn btn-danger">View all states</a>
+          <div class="mt-2">
+            <i class="fa-regular fa-heart text-white bg-danger p-2 rounded-circle me-2"></i>
+            <i class="fa-solid fa-share-nodes text-white bg-danger p-2 rounded-circle"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- EXPERIENCES -->
+<div style="background-color: rgb(252, 203, 112); text-align: center;">
+  <h4>____More____</h4>
+  <h1 class="fw-bold">Experiences</h1>
+  <div class="container py-4">
+    <div class="row g-4">
+      <div class="col-md-4 col-sm-6">
+        <div class="card h-100">
+          <img src="image3.jfif" class="card-img-top" alt="">
+          <div class="card-body">
+            <h5 class="card-title">Weekend Getaways from Hyderabad</h5>
+            <hr />
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <div class="card h-100">
+          <img src="image4.jfif" class="card-img-top" alt="">
+          <div class="card-body">
+            <h5 class="card-title">Culinary Journey in Hyderabad</h5>
+            <hr />
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <div class="card h-100">
+          <img src="image5.jfif" class="card-img-top" alt="">
+          <div class="card-body">
+            <h5 class="card-title">Best Local Foods in Hyderabad</h5>
+            <hr />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mt-4">
+      <a href="#" class="text-reset me-3"><i class="fa-solid fa-arrow-left"></i><i class="fa-solid fa-arrow-right ms-2"></i></a><br />
+      <button class="btn btn-danger mt-3">View all</button>
+    </div>
+  </div>
+</div>
+
+<!-- ATTRACTIONS -->
+<div class="text-center py-5">
+  <h4>____Explore____</h4>
+  <h1 class="fw-bold">Attractions</h1>
+</div>
+<div class="container pb-5">
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+    <!-- Attraction Cards -->
+    <div class="col"><div class="card h-100"><img src="images6.jfif" class="card-img-top" alt=""><div class="card-body text-center"><h6>Paigah Tombs</h6></div></div></div>
+    <div class="col"><div class="card h-100"><img src="image7.jpg" class="card-img-top" alt=""><div class="card-body text-center"><h6>Nehru Zoological Park</h6></div></div></div>
+    <div class="col"><div class="card h-100"><img src="image8.jpg" class="card-img-top" alt=""><div class="card-body text-center"><h6>Falaknuma Palace</h6></div></div></div>
+    <div class="col"><div class="card h-100"><img src="image9.jfif" class="card-img-top" alt=""><div class="card-body text-center"><h6>St. Mary's Church</h6></div></div></div>
+    <div class="col"><div class="card h-100"><img src="image10.jpg" class="card-img-top" alt=""><div class="card-body text-center"><h6>Salar Jung Museum</h6></div></div></div>
+    <div class="col"><div class="card h-100"><img src="image11.jpg" class="card-img-top" alt=""><div class="card-body text-center"><h6>Nagarjuna Sagar Dam</h6></div></div></div>
+    <div class="col"><div class="card h-100"><img src="image12.jpg" class="card-img-top" alt=""><div class="card-body text-center"><h6>Charminar</h6></div></div></div>
+  </div>
+  <div class="text-center mt-4">
+    <button class="btn btn-danger">Discover more</button>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="text-center text-lg-start bg-body-tertiary text-muted">
+  <section class="py-4 border-top">
+    <div class="container text-md-start">
+      <div class="row">
+        <div class="col-md-3">
+          <img src="incredible-india-logo.svg" height="50" alt="Logo" />
+          <h2>Follow Us</h2>
+          <div>
+            <a href="#" class="me-3"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="me-3"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="me-3"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="me-3"><i class="fab fa-youtube"></i></a>
+            <a href="#" class="me-3"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <h6 class="fw-bold">Quick Links</h6>
+          <p><a href="#" class="text-reset">Attractions</a></p>
+          <p><a href="#" class="text-reset">Experiences</a></p>
+          <p><a href="#" class="text-reset">Festivals</a></p>
+          <p><a href="#" class="text-reset">FAQs</a></p>
+        </div>
+        <div class="col-md-3">
+          <h6 class="fw-bold">Newsletter</h6>
+          <p>Sign up for travel tips and event updates.</p>
+          <button class="btn btn-danger rounded-pill">Subscribe now</button>
+        </div>
+        <div class="col-md-4">
+          <h6 class="fw-bold">Scan to Chat</h6>
+          <i class="fa-solid fa-qrcode fa-2x"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="text-center p-4" style="background-color: rgba(0,0,0,0.05);">
+    <a href="#" class="text-reset">Terms of Use</a> | 
+    <a href="#" class="text-reset">Privacy Policy</a> |
+    <a href="#" class="text-reset">Contact Us</a> <br>
+    © Ministry of Tourism, Government of India.
+  </div>
+</footer>
+
+<!-- MDB JS -->
+<script src="https://cdn.jsdelivr.net/npm/mdb-ui-kit@9.0.0/js/mdb.umd.min.js"></script>
 </body>
 </html>
