@@ -4,88 +4,133 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Incredible India - Hyderabad</title>
+  <link rel="stylesheet" href="style.css">
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet"/>
+   <!-- Swiper CSS -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-  <!-- Font Awesome -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
 
-  <!-- MDB UI Kit -->
-  <link href="https://cdn.jsdelivr.net/npm/mdb-ui-kit@9.0.0/css/mdb.min.css" rel="stylesheet"/>
+<!-- Font Awesome -->
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+  rel="stylesheet"
+/>
+<!-- Google Fonts -->
+<link
+  href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+  rel="stylesheet"
+/>
+<!-- MDB -->
+<link
+  href="https://cdn.jsdelivr.net/npm/mdb-ui-kit@9.0.0/css/mdb.min.css"
+  rel="stylesheet"
+/>
 </head>
 <body>
 
-<!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand mt-2 mt-lg-0" href="#">
-      <img src="incredible-india-logo.svg" height="30" alt="Logo" style="background-color: black;" />
-    </a>
 
-    <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarNavDropdown">
-      <i class="fas fa-bars"></i>
-    </button>
+  <nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary">
+    <div class="container-fluid">
+      <!-- Logo -->
+      <a class="navbar-brand" href="#">
+        <img src="incredible-india-logo.svg" height="30" alt="Incredible India Logo" style="background-color: black;" />
+      </a>
 
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <!-- Destinations -->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" data-mdb-toggle="dropdown">Destinations</a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-          </ul>
-        </li>
-        <!-- Experiences -->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" data-mdb-toggle="dropdown">Experiences</a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-          </ul>
-        </li>
-        <!-- Plan Trip -->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" data-mdb-toggle="dropdown">Plan Your Trip</a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-          </ul>
-        </li>
-      </ul>
+      <!-- Toggler -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-mdb-toggle="collapse"
+        data-mdb-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i class="fas fa-bars"></i>
+      </button>
 
-      <!-- Right icons -->
-      <div class="d-flex align-items-center">
-        <a href="#" class="me-3 text-reset"><i class="fas fa-search"></i></a>
-        <a href="#" class="me-3 text-reset"><i class="fa-regular fa-user"></i></a>
-        <a href="#" class="me-3 text-reset"><i class="fa-regular fa-heart"></i></a>
-        <a href="#" class="me-3 text-reset"><i class="fa-solid fa-bars"></i></a>
+      <!-- Collapsible content -->
+      <div class="collapse navbar-collapse" id="navbarNavDropdown" style="background-color: black;">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <!-- Destinations Dropdown -->
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="destinationsDropdown"
+              role="button"
+              data-mdb-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Destinations
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="destinationsDropdown">
+              <li><a class="dropdown-item" href="destinations.html">Hyderabad</a></li>
+              <li><a class="dropdown-item" href="#">Another destination</a></li>
+            </ul>
+          </li>
+
+          <!-- Experiences Dropdown -->
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="experiencesDropdown"
+              role="button"
+              data-mdb-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Experiences
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="experiencesDropdown">
+              <li><a class="dropdown-item" href="experiences.html">Shopping in Hyderabad</a></li>
+              <li><a class="dropdown-item" href="#">Another experience</a></li>
+            </ul>
+          </li>
+
+          <!-- Plan Your Trip Dropdown -->
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="planTripDropdown"
+              role="button"
+              data-mdb-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Plan Your Trip
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="planTripDropdown">
+              <li><a class="dropdown-item" href="contact.html">Contact Us</a></li>
+              <li><a class="dropdown-item" href="#">Plan detail</a></li>
+            </ul>
+          </li>
+        </ul>
       </div>
     </div>
-  </div>
-</nav>
+  </nav>
 
-<!-- HERO -->
-<div class="bg-image text-white p-5 text-center" style="background-image: url('https://mdbcdn.b-cdn.net/img/new/slides/003.webp'); background-size: cover;">
-  <h3 class="mb-3 h2">Telangana</h3>
-  <h1 class="fw-bold">The best places to shop in Hyderabad for every budget</h1>
+
+
+<!-- HERO VIDEO -->
+<div class="inc-video-control text-center my-4">
+  <video src="https://www.incredibleindia.gov.in/content/dam/incredible-india/videos/home/India-360-v2.mp4"  loop autoplay muted width="100%"></video>
 </div>
 
 <!-- DESCRIPTION + MAP -->
 <div class="container py-5">
   <div class="row align-items-center">
     <div class="col-lg-6">
-      <h2 class="fw-bold">Explore the enchanting shopper's paradise</h2>
+      <h2 class="fw-bold">Pearls of the Past</h2>
       <p>
-        Hyderabad, known for its rich heritage and delectable cuisine, is also an effervescent marketplace full of lively markets. Tourists flock to <a href="#" style="color: red;">Charminar</a> for exquisite jewellery, traditional fabrics, and more!
+        Hyderabad is the capital of Telangana and a major travel destination. Known for its vibrant culture, iconic food, historic landmarks, and booming IT sector, it beautifully blends tradition and modernity. From hi-tech business centers to ancient monuments, Hyderabad offers a fascinating experience.
       </p>
       <button class="btn btn-danger rounded-pill">Read more</button>
     </div>
     <div class="col-lg-6">
       <div class="card">
-        <div style="height: 200px">
-          <iframe src="https://maps.google.com/maps?q=manhattan&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen></iframe>
+        <div style="height: 200px;">
+          <iframe src="https://maps.google.com/maps?q=Charminar,Hyderabad&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
         </div>
         <div class="card-body text-center">
           <a href="#" class="btn btn-danger">View all states</a>
@@ -99,75 +144,481 @@
   </div>
 </div>
 
+
+<!-- Carousel wrapper -->
+<div class="inc-title-heading text-center">
+  <h2>DESTINATIONS</h2>
+  <h3>for every bucket list</h3>
+</div>
+
+<div id="carouselBasicExample" class="carousel slide carousel-fade carousel-dark" data-mdb-ride="carousel" data-mdb-interval="5000">
+  
+  <!-- Indicators -->
+  <div class="carousel-indicators">
+    <button type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide-to="3" aria-label="Slide 4"></button>
+    <button type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide-to="4" aria-label="Slide 5"></button>
+  </div>
+
+  <!-- Slides -->
+  <div class="carousel-inner text-center">
+
+    <!-- Slide 1 -->
+    <div class="carousel-item active">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Red_Fort_in_Delhi_03-2016_img3.jpg/2560px-Red_Fort_in_Delhi_03-2016_img3.jpg" class="d-block w-100" alt="Red Fort in Delhi" />
+      <div class="carousel-caption d-none d-md-block text-white bg-opacity-50 rounded p-3">
+        <h2>Delhi</h2>
+        <a href="https://www.incredibleindia.gov.in/en/delhi/delhi" class="btn btn-primary" target="_self">Discover more</a>
+      </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="carousel-item">
+      <img src="https://s7ap1.scene7.com/is/image/incredibleindia/1-bandra-worli-sea-ink-mumbai-maharashtra-attr-hero?qlt=82&ts=1727355264966" class="d-block w-100" alt="Bandra-Worli Sea Link in Mumbai" />
+      <div class="carousel-caption d-none d-md-block text-white bg-opacity-50 rounded p-3">
+        <h2>Mumbai</h2>
+        <a href="https://www.incredibleindia.gov.in/en/maharashtra/mumbai" class="btn btn-primary" target="_self">Discover more</a>
+      </div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="carousel-item">
+      <img src="https://s7ap1.scene7.com/is/image/incredibleindia/cola-beach-goa-blog-ntr-hero?qlt=82&ts=1726735623951" class="d-block w-100" alt="Cola Beach in Goa" />
+      <div class="carousel-caption d-none d-md-block text-white bg-opacity-50 rounded p-3">
+        <h2>Goa</h2>
+        <a href="https://www.incredibleindia.gov.in/en/goa/goa" class="btn btn-primary" target="_self">Discover more</a>
+      </div>
+    </div>
+
+    <!-- Slide 4 -->
+    <div class="carousel-item">
+      <img src="https://content.r9cdn.net/rimg/dimg/50/24/cd2d7a2a-city-45718-17313df4b89.jpg?width=1366&height=768&xhint=2506&yhint=1529&crop=true" class="d-block w-100" alt="Mountain views in Manali" />
+      <div class="carousel-caption d-none d-md-block text-white bg-opacity-50 rounded p-3">
+        <h2>Manali</h2>
+        <a href="https://www.incredibleindia.gov.in/en/himachal-pradesh/manali" class="btn btn-primary" target="_self">Discover more</a>
+      </div>
+    </div>
+
+    <!-- Slide 5 -->
+    <div class="carousel-item">
+      <img src="https://content.r9cdn.net/rimg/dimg/1a/a0/0cbc7343-lm-49820-168c48a151b.jpg?crop=true&width=1020&height=498" class="d-block w-100" alt="Lake Pichola in Udaipur" />
+      <div class="carousel-caption d-none d-md-block text-white bg-opacity-50 rounded p-3">
+        <h2>Udaipur</h2>
+        <a href="https://www.incredibleindia.gov.in/en/rajasthan/udaipur" class="btn btn-primary" target="_self">Discover more</a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Controls -->
+  <button class="carousel-control-prev" type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+ <!-- Attraction Section -->
+  <section>
+    <div class="text inc-title-heading inc-attraction-heading">
+      <div class="cmp-text text-center">
+          <h2>Attractions</h2>
+          <h3>worth a thousand stories</h3>
+      </div>
+    </div>
+
+    <div class="swiper inc-attraction-swiper">
+      <div class="swiper-wrapper">
+
+          <!-- Slide 1 -->
+          <div class="swiper-slide">
+              <div class="inc-attraction-v1">
+                  <div class="inc-attraction-v1-img">
+                      <img src="https://images.saymedia-content.com/.image/ar_16:9%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:eco%2Cw_1200/MjAzNDMwNzE1ODA1NjcyNzk2/fort-agra-easy-peasy.jpg" alt="Red Fort">
+                  </div>
+                  <div class="inc-attraction-v1-body">
+                      <h5 class="inc-attraction-v1-title">Red Fort</h5>
+                      <a href="https://www.incredibleindia.gov.in/en/delhi/delhi/red-fort" target="_blank" class="btn btn-primary">Explore</a>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="swiper-slide">
+              <div class="inc-attraction-v1">
+                  <div class="inc-attraction-v1-img">
+                      <img src="https://www.travelandleisure.com/thmb/wdUcyBQyQ0wUVs4wLahp0iWgZhc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/taj-mahal-agra-india-TAJ0217-9eab8f20d11d4391901867ed1ce222b8.jpg" alt="Taj Mahal">
+                  </div>
+                  <div class="inc-attraction-v1-body">
+                      <h5 class="inc-attraction-v1-title">Taj Mahal</h5>
+                      <a href="https://www.incredibleindia.gov.in/content/incredible-india-v2/en/destinations/agra/taj-mahal.html" class="btn btn-primary">Explore</a>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="swiper-slide">
+              <div class="inc-attraction-v1">
+                  <div class="inc-attraction-v1-img">
+                      <img src="https://s7ap1.scene7.com/is/image/incredibleindia/har-ki-pauri-haridwar-uttarakhand-1-attr-hero?qlt=82&ts=1726645951242" alt="Har Ki Pauri">
+                  </div>
+                  <div class="inc-attraction-v1-body">
+                      <h5 class="inc-attraction-v1-title">Har Ki Pauri</h5>
+                      <a href="https://www.incredibleindia.gov.in/en/uttarakhand/haridwar/har-ki-pauri" target="_self" class="btn btn-primary">Explore</a>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Slide 4 -->
+          <div class="swiper-slide">
+              <div class="inc-attraction-v1">
+                  <div class="inc-attraction-v1-img">
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Mumbai_03-2016_30_Gateway_of_India.jpg/1200px-Mumbai_03-2016_30_Gateway_of_India.jpg" alt="Gateway of India">
+                  </div>
+                  <div class="inc-attraction-v1-body">
+                      <h5 class="inc-attraction-v1-title">Gateway of India</h5>
+                      <a href="https://www.incredibleindia.gov.in/en/maharashtra/mumbai/the-gateway-of-india" target="_self" class="btn btn-primary">Explore</a>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Slide 5 -->
+          <div class="swiper-slide">
+              <div class="inc-attraction-v1">
+                  <div class="inc-attraction-v1-img">
+                      <img src="https://s7ap1.scene7.com/is/image/incredibleindia/charminar-mosque-hyderabad-telangana-3-attr-about?qlt=82&ts=1726652899615" alt="Charminar">
+                  </div>
+                  <div class="inc-attraction-v1-body">
+                      <h5 class="inc-attraction-v1-title">Charminar</h5>
+                      <a href="https://www.incredibleindia.gov.in/en/telangana/hyderabad/charminar" target="_self" class="btn btn-primary">Explore</a>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Slide 6 -->
+          <div class="swiper-slide">
+              <div class="inc-attraction-v1">
+                  <div class="inc-attraction-v1-img">
+                      <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/f3/ed/05/as-the-spring-has-set.jpg?w=1200&h=1200&s=1" alt="Tulip Garden">
+                  </div>
+                  <div class="inc-attraction-v1-body">
+                      <h5 class="inc-attraction-v1-title">Tulip Garden</h5>
+                      <a href="https://www.incredibleindia.gov.in/en/jammu-and-kashmir/patnitop/tulip-garden" target="_self" class="btn btn-primary">Explore</a>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Slide 7 -->
+          <div class="swiper-slide">
+              <div class="inc-attraction-v1">
+                  <div class="inc-attraction-v1-img">
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_Hawa_Mahal_Jaipur_from_ground_level_%28July_2022%29_-_img_01.jpg" alt="Hawa Mahal">
+                  </div>
+                  <div class="inc-attraction-v1-body">
+                      <h5 class="inc-attraction-v1-title">Hawa Mahal</h5>
+                      <a href="https://www.incredibleindia.gov.in/content/incredible-india-v2/en/destinations/jaipur/hawa-mahal.html" class="btn btn-primary">Explore</a>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Slide 8 -->
+          <div class="swiper-slide">
+              <div class="inc-attraction-v1">
+                  <div class="inc-attraction-v1-img">
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/The_Golden_Temple_of_Amrithsar_7.jpg/1200px-The_Golden_Temple_of_Amrithsar_7.jpg" alt="Golden Temple">
+                  </div>
+                  <div class="inc-attraction-v1-body">
+                      <h5 class="inc-attraction-v1-title">Golden Temple</h5>
+                      <a href="https://www.incredibleindia.gov.in/en/punjab/amritsar/sri-harmandir-sahib-golden-temple" class="btn btn-primary">Explore</a>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Slide 9 -->
+          <div class="swiper-slide">
+              <div class="inc-attraction-v1">
+                  <div class="inc-attraction-v1-img">
+                      <img src="https://s7ap1.scene7.com/is/image/incredibleindia/anjuna-beach-goa-goa-anjuna-beach--goa-5-attr-hero?qlt=82&ts=1726735379730" alt="Anjuna beach">
+                  </div>
+                  <div class="inc-attraction-v1-body">
+                      <h5 class="inc-attraction-v1-title">Anjuna beach</h5>
+                      <a href="https://www.incredibleindia.gov.in/en/goa/goa/anjuna-beach" target="_self" class="btn btn-primary">Explore</a>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Slide 10 -->
+          <div class="swiper-slide">
+              <div class="inc-attraction-v1">
+                  <div class="inc-attraction-v1-img">
+                      <img src="https://www.holidify.com/images/cmsuploads/compressed/1024px-Jagannath_Temple_Hyderabad_20180806195918_20180806195944.jpg" alt="Sri-jagannath-temple">
+                  </div>
+                  <div class="inc-attraction-v1-body">
+                      <h5 class="inc-attraction-v1-title">Sri jagannath temple</h5>
+                      <a href="https://www.incredibleindia.gov.in/en/odisha/puri/sri-jagannath-temple" target="_self" class="btn btn-primary">Explore</a>
+                  </div>
+              </div>
+          </div>
+          <!-- <div class="carousel-actions">
+            <button class="prev-btn slick-disabled">Previous</button>
+            <button class="next-btn">Next</button>
+        </div> -->
+
+
+
+      <!-- Navigation -->
+      <!-- <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div> -->
+<!-- 
+      <div class="inc-card-btn" style="text-align: center;">
+        <div class="mt-4"> -->
+          <!-- <a href="#" class="text-reset me-3"><i class="fa-solid fa-arrow-left"></i><i class="fa-solid fa-arrow-right ms-2"></i></a><br/> -->
+          <!-- <a href="https://www.incredibleindia.gov.in/en/attractions" class="btn btn-primary inc-button-primary inc-button__view-all" >Discover more</a>
+        </div> -->
+    </div>
+    <div class="inc-card-btn" style="text-align: center;">
+      <div class="mt-4">
+        <!-- <a href="#" class="text-reset me-3"><i class="fa-solid fa-arrow-left"></i><i class="fa-solid fa-arrow-right ms-2"></i></a><br/> -->
+        <a href="https://www.incredibleindia.gov.in/en/attractions" class="btn btn-primary inc-button-primary inc-button__view-all" >Discover more</a>
+      </div>
+  </div>
+</div>
+  </section>
+
+
+<!-- Travel Diaries Section -->
+<section class="inc-experience-section" style="background-color:rgb(252, 203, 112) ;" >
+  <div class="text inc-title-heading inc-experience-heading aem-GridColumn aem-GridColumn--default--12">
+    <div id="text-0223e80b9e" class="cmp-text">
+      <h2>TRAVEL DIARIES</h2>
+      <h3>For Every Passion </h3>
+  </div>
+
+  <!-- Search and Filter Section -->
+  <div class="listing-filters-wrapper inc-container">
+    <div class="listing-search-content">
+    </div>
+
+    <!-- Filter Bar Section -->
+    <div class="inc-exp-filter-bar__content">
+      <div class="inc-exp-filter-bar__items row">
+        
+        <!-- Interests Filter Button -->
+        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+          <button class="inc-exp-filter-bar__toggle inc-exp-filter-bar__topics" aria-labelledby="inc-exp-filter-bar__topics">
+            Interests
+           
+          </button>
+        </div>
+
+        <!-- Regions Filter Button -->
+        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+          <button class="inc-exp-filter-bar__toggle inc-exp-filter-bar__regions" aria-labelledby="inc-exp-filter-bar__regions-form">
+            Regions
+            
+          </button>
+        </div>
+
+        <!-- Hidden Button for Festivals/Events (if needed in the future) -->
+        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 d-none">
+          <button class="inc-exp-filter-bar__toggle inc-exp-filter-bar__festivals-events" aria-labelledby="inc-exp-filter-bar__Festivals-Events">
+            <span class="inc-exp-filter-bar__active-item-num"></span>
+          </button>
+        </div>
+
+        <!-- Hidden Button for Months (if needed in the future) -->
+        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 d-none">
+          <button class="inc-exp-filter-bar__toggle inc-exp-filter-bar__months" aria-labelledby="inc-exp-filter-bar__month-form">
+            <span class="inc-exp-filter-bar__active-item-num"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 <!-- EXPERIENCES -->
 <div style="background-color: rgb(252, 203, 112); text-align: center;">
-  <h4>____More____</h4>
-  <h1 class="fw-bold">Experiences</h1>
   <div class="container py-4">
     <div class="row g-4">
       <div class="col-md-4 col-sm-6">
         <div class="card h-100">
-          <img src="image3.jfif" class="card-img-top" alt="">
+          <img src="https://s7ap1.scene7.com/is/image/incredibleindia/IFTAR-AT-JAMA-MASJID-DELHI3-hero?qlt=82&ts=1727010449155" class="card-img-top" alt="Weekend Getaways">
           <div class="card-body">
-            <h5 class="card-title">Weekend Getaways from Hyderabad</h5>
-            <hr />
+            <div class="card-body inc-card-body">
+              <p><span class="inc-ic-state">
+                  <a href="https://www.incredibleindia.gov.in/en/delhi">Delhi</a></span> | <span class="inc-ic-crafts"> Spiritual</span>
+              </p>
+              <a href="https://www.incredibleindia.gov.in/en/delhi/delhi/iftar-at-jama-masjid-delhi" class="inc-card__content">
+                  <p class="card-text inc-card-text">Iftar at Jama Masjid, Delhi</p>
+                  
+              </a>
+          </div>
           </div>
         </div>
       </div>
       <div class="col-md-4 col-sm-6">
         <div class="card h-100">
-          <img src="image4.jfif" class="card-img-top" alt="">
+          <img src="https://s7ap1.scene7.com/is/image/incredibleindia/sector-17-chandigarh-punjab-blog-sho-hero?qlt=82&ts=1727159616888" class="card-img-top" alt="Culinary Journey">
           <div class="card-body">
-            <h5 class="card-title">Culinary Journey in Hyderabad</h5>
-            <hr />
+            <div class="card-body inc-card-body">
+              <p><span class="inc-ic-state">
+                  <a href="https://www.incredibleindia.gov.in/en/chandigarh">Chandigarh</a></span> | <span class="inc-ic-crafts">Shopping</span>
+              </p>
+              <a href="https://www.incredibleindia.gov.in/en/chandigarh/chandigarh/unleashing-the-charms-of-retail-therapy" class="inc-card__content">
+                  <p class="card-text inc-card-text">Chandigarh’s shopping extravaganza: unleashing the charms of retail therapy</p>
+                  
+              </a>
+          </div>
           </div>
         </div>
       </div>
       <div class="col-md-4 col-sm-6">
         <div class="card h-100">
-          <img src="image5.jfif" class="card-img-top" alt="">
+          <img src="image5.jfif" class="card-img-top" alt="Local Foods">
           <div class="card-body">
-            <h5 class="card-title">Best Local Foods in Hyderabad</h5>
-            <hr />
+            <div class="card-body inc-card-body">
+              <p><span class="inc-ic-state">
+                  <a href="https://www.incredibleindia.gov.in/en/telangana">Telangana</a></span> | <span class="inc-ic-crafts">Gastronomy</span>
+              </p>
+              <a href="https://www.incredibleindia.gov.in/en/telangana/hyderabad/the-best-local-foods-in-hyderabad" class="inc-card__content">
+                  <p class="card-text inc-card-text">The best local foods in Hyderabad and where to find them</p>
+                  
+              </a>
+          </div>
           </div>
         </div>
       </div>
+    
     </div>
-    <div class="mt-4">
-      <a href="#" class="text-reset me-3"><i class="fa-solid fa-arrow-left"></i><i class="fa-solid fa-arrow-right ms-2"></i></a><br />
-      <button class="btn btn-danger mt-3">View all</button>
+
+
+    <div class="carousel-actions bottom">
+  <div class="inc-card-btn">
+    <a href="#" class="text-reset me-3"><i class="fa-solid fa-arrow-left"></i><i class="fa-solid fa-arrow-right ms-2"></i></a><br/>
+      <a href="https://www.incredibleindia.gov.in/en/experiences" class="btn btn-primary inc-button-primary">Discover more</a>
+  </div>
+
+  </div>
+</div>
+</div>
+
+
+
+<!-- Hidden Gems Section -->
+<section class="inc-hidden-gems">
+  <div class="container inc-hidden-gems-v1">
+    <div class="inc-inner-section-wrap">
+
+      <div class="text inc-title-heading inc-crafts-heading text-center">
+        <h2>Exquisite Crafts</h2>
+        <h3>of Timeless Tradition</h3>
+      </div>
+
+      <!-- Crafts Grid -->
+      <div class="inc-hidden-gems-grid">
+        <div class="inc-gem-card">
+          <img src="https://s7ap1.scene7.com/is/image/incredibleindia/Durgi-Stone-Carvings-andhra-pradesh-craft-hero?qlt=82&ts=1726641467017" alt="Durgi Stone Carvings in Andhra Pradesh" class="inc-gem-image" />
+          <h4 class="inc-gem-title">Andhra Pradesh</h4>
+          <p class="inc-gem-description">Durgi Stone Carvings</p>
+        </div>
+        <div class="inc-gem-card">
+          <img src="https://s7ap1.scene7.com/is/image/incredibleindia/muga-silk-assam-craft-hero?qlt=82&ts=1727012318071" alt="Muga Silk from Assam" class="inc-gem-image" />
+          <h4 class="inc-gem-title">Assam</h4>
+          <p class="inc-gem-description">Muga Silk</p>
+        </div>
+        <div class="inc-gem-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBXE9uPjIf_BvqQbC6YHLFrenaBG3DitD9Ow&s" alt="Phulkari from Punjab" class="inc-gem-image" />
+          <h4 class="inc-gem-title">Punjab</h4>
+          <p class="inc-gem-description">Phulkari</p>
+        </div>
+        <div class="inc-gem-card">
+          <img src="https://s7ap1.scene7.com/is/image/incredibleindia/bastar-dhokra-bell-metal-dhokra-art-handicraft-chhattisgarh-1-craft-hero?qlt=82&ts=1726641545083" alt="Bastar Dhokra Art from Chhattisgarh" class="inc-gem-image" />
+          <h4 class="inc-gem-title">Chhattisgarh</h4>
+          <p class="inc-gem-description">Bastar Dhokra</p>
+        </div>
+      </div>
+
+      <div class="text-center mt-4">
+        <a href="https://www.incredibleindia.gov.in/en/exquisite-crafts" class="btn btn-primary inc-button-primary">Discover more</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Celebrations Section -->
+<div class="celebrations">
+  <input type="hidden" class="celebrations-form-data"
+         data-path="/content/incredible-india/en/festivals-and-events"
+         data-festivalType="festivalpage"
+         data-eventType="eventpage"
+         data-maxItem="8" />
+
+  <div class="container inc-celebration-v1">
+    <div class="inc-title-heading text-center">
+      <h2>Every day a</h2>
+      <h1>Celebration</h1>
+    </div>
+
+    <div class="inc-tab-switch text-center">
+      <button id="festival-tab" class="tab active">Festivals</button>
+      <button id="events-tab" class="tab">Events</button>
+      <button id="inc-filter-btn-0">By Month</button>
+      <button id="inc-filter-btn-1">By States & UTs</button>
+      <button id="inc-filter-btn-2">By Interests</button>
+    </div>
+
+    <!-- Dropdown Filters -->
+    <div class="filter-dropdowns">
+      <div class="dropdown" id="dropdown-month">
+        <ul>
+          <li>January</li>
+          <li>February</li>
+          <!-- Add remaining months -->
+        </ul>
+      </div>
+      <div class="dropdown" id="dropdown-states">
+        <ul>
+          <li>Telangana</li>
+          <li>Maharashtra</li>
+          <!-- Add more states -->
+        </ul>
+      </div>
+      <div class="dropdown" id="dropdown-interests">
+        <ul>
+          <li>Select All</li>
+          <li>Music & Arts</li>
+          <li>Culture & Spiritual</li>
+          <!-- Add more interests -->
+        </ul>
+      </div>
+    </div>
+
+    <!-- No Results -->
+    <div class="text-center">
+      <h4>No results found</h4>
+    </div>
+
+    <div class="text-center mt-4">
+      <a href="https://www.incredibleindia.gov.in/en/festivals-and-events" class="btn btn-outline-primary">Discover More Festivals</a>
     </div>
   </div>
 </div>
 
-<!-- ATTRACTIONS -->
-<div class="text-center py-5">
-  <h4>____Explore____</h4>
-  <h1 class="fw-bold">Attractions</h1>
-</div>
-<div class="container pb-5">
-  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
-    <!-- Attraction Cards -->
-    <div class="col"><div class="card h-100"><img src="images6.jfif" class="card-img-top" alt=""><div class="card-body text-center"><h6>Paigah Tombs</h6></div></div></div>
-    <div class="col"><div class="card h-100"><img src="image7.jpg" class="card-img-top" alt=""><div class="card-body text-center"><h6>Nehru Zoological Park</h6></div></div></div>
-    <div class="col"><div class="card h-100"><img src="image8.jpg" class="card-img-top" alt=""><div class="card-body text-center"><h6>Falaknuma Palace</h6></div></div></div>
-    <div class="col"><div class="card h-100"><img src="image9.jfif" class="card-img-top" alt=""><div class="card-body text-center"><h6>St. Mary's Church</h6></div></div></div>
-    <div class="col"><div class="card h-100"><img src="image10.jpg" class="card-img-top" alt=""><div class="card-body text-center"><h6>Salar Jung Museum</h6></div></div></div>
-    <div class="col"><div class="card h-100"><img src="image11.jpg" class="card-img-top" alt=""><div class="card-body text-center"><h6>Nagarjuna Sagar Dam</h6></div></div></div>
-    <div class="col"><div class="card h-100"><img src="image12.jpg" class="card-img-top" alt=""><div class="card-body text-center"><h6>Charminar</h6></div></div></div>
-  </div>
-  <div class="text-center mt-4">
-    <button class="btn btn-danger">Discover more</button>
-  </div>
-</div>
-
-<!-- FOOTER -->
+<!-- Footer -->
 <footer class="text-center text-lg-start bg-body-tertiary text-muted">
   <section class="py-4 border-top">
     <div class="container text-md-start">
       <div class="row">
         <div class="col-md-3">
-          <img src="incredible-india-logo.svg" height="50" alt="Logo"  style="background-color: black;" />
+          <img src="incredible-india-logo.svg" height="50" alt="Incredible India Logo" style="background-color: black;" />
           <h2>Follow Us</h2>
           <div>
             <a href="#" class="me-3"><i class="fab fa-facebook-f"></i></a>
@@ -191,20 +642,25 @@
         </div>
         <div class="col-md-4">
           <h6 class="fw-bold">Scan to Chat</h6>
-          <i class="fa-solid fa-qrcode fa-2x"></i>
+          <i class="fa-solid fa-qrcode fa-2x" aria-hidden="true"></i>
         </div>
       </div>
     </div>
   </section>
   <div class="text-center p-4" style="background-color: rgba(0,0,0,0.05);">
-    <a href="#" class="text-reset">Terms of Use</a> | 
+    <a href="#" class="text-reset">Terms of Use</a> |
     <a href="#" class="text-reset">Privacy Policy</a> |
-    <a href="#" class="text-reset">Contact Us</a> <br>
+    <a href="#" class="text-reset">Contact Us</a><br>
     © Ministry of Tourism, Government of India.
   </div>
 </footer>
 
-<!-- MDB JS -->
+<!-- Swiper & MDB Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/mdb-ui-kit@9.0.0/js/mdb.umd.min.js"></script>
+<script src="script.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.js"></script>
+
 </body>
 </html>
